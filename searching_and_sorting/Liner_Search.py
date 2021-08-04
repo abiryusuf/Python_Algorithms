@@ -6,16 +6,17 @@ if not found it will return -1
 
 Linear search: finding the phone number by searching in phone
 """
-
+arr = [2, 5, 3, 7, 9]
+target = 3
 def linearSearch(value, target):
     length = len(value)
+
     for i in range(0, length):
         if value[i] == target:
             return i
     return -1
-arr = [3, 5, 6, 10, 13, 16]
-tar = 10
-x = linearSearch(arr, tar)
+
+x = linearSearch(arr, target)
 if x == -1:
     print("Not found")
 else:
