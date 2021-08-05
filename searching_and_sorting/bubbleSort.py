@@ -4,6 +4,8 @@ larger values to bubble to the top or end of the list.
 
 Main reasons is find the large value from end of the list
 Bubble sort needs two loops
+
+# # follow the order from biggest number
 """
 
 arr = [12, 3, 6, 11, 5, 10]
