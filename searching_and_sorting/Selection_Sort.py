@@ -1,15 +1,16 @@
 
 # follow the order from smallest number
-arr = [5, 3, 8, 6, 7, 2]
+arr = [65, 25, 12, 33, 11]
 
-def selectionSort(arr):
-
-    length = len(arr)
-
-    for i in range(length):
-        min_idx = i
-        for j in range(i + 1, length):
-            if arr[min_idx] > arr[j]:
-                min_idx = j
-
+for i in range(len(arr)):
+     idx = i
+     for j in range(i + 1, len(arr)):
+         if arr[idx] > arr[j]:
+             idx = j
+     arr[i], arr[idx] = arr[idx], arr[i]
+    # print(idx)
+for i in range(len(arr)):
+    print(arr[i])
+for i, value in enumerate(arr):
+    print("index {} and value {}".format(i + 1, value))
 
