@@ -29,6 +29,8 @@ def minNum(arr):
     return min
 print(minNum(arr_1))
 
+
+arr_2 = [8, 5, 3, 4, 6, 7, 7]
 def minMax(num):
     min = num[0]
     max = num[0]
@@ -40,7 +42,8 @@ def minMax(num):
         if current > max:
             max = current
     return min, max
-print(minMax(arr_1))
+print(minMax(arr_2))
 
 
-
+for i in range(1, len(arr_2)):
+    print(arr_2[i], end=" ")
