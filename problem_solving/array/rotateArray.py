@@ -14,6 +14,10 @@ def arrayRotate(arr, target, n):
         arr[i] = arr[target]
         i += 1
         target += 1
-    arr[:] = arr[: i] + temp
-    return arr
+    arr_1 = arr[: i] + temp
+    return arr_1
 print(arrayRotate(arr, 3, len(arr)))
+
+arr = [1, 4, 7, 8]
+
+
