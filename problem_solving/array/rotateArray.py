@@ -1,7 +1,7 @@
 
 arr = [1, 2, 3, 4, 5, 6, 7]
 
-def arrayRotate(arr, target, n):
+def arrayRotate(arr, target):
     n = len(arr)
 
     temp = []
@@ -16,7 +16,7 @@ def arrayRotate(arr, target, n):
         target += 1
     arr_1 = arr[: i] + temp
     return arr_1
-print(arrayRotate(arr, 3, len(arr)))
+print(arrayRotate(arr, 3))
 
 arr = [1, 4, 7, 8]
 
