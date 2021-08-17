@@ -1,18 +1,12 @@
-def arrayRotate(arr, target):
-    n = len(arr)
+def countLetter(str):
+    str = str.replace(" ", "").lower()
+    count = {}
 
-    temp = []
-    i = 0
+    for i in str:
+        if i in count:
+            count[i] += 1
+        else:
+            count[i] = 1
+    return count
+print(countLetter("abir yusuf"))
 
-    while i < target:
-        temp.append(arr[i])
-        i += 1
-    i = 0
-    while target < n:
-        arr[i] = arr[target]
-        i += 1
-        target += 1
-    arr_1 = arr[: i] + temp
-    return arr_1
-arr = [1, 2, 3, 4, 5, 6]
-print(arrayRotate(arr, 2))
