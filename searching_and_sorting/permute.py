@@ -6,7 +6,7 @@ def permute(data, i, length):
             # swap
             data[i], data[j] = data[j], data[i]
             permute(data, i + 1, length)
-            # data[i], data[j] = data[j], data[i]
+            data[i], data[j] = data[j], data[i]
 
 
 string = "A","B", "C"

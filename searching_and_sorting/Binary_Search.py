@@ -25,7 +25,7 @@ def binary(arr, target):
         else:
             last_item = mid
     return False
-target = 12
+target = 3
 
 x = binary(arr, target)
 
